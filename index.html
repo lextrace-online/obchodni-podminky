@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>Obchodní podmínky – Lextrace LLC</title>
+    <style>
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px;
+      }
+
+      :root {
+        --bg: #141414;
+        --text: #e8e8e8;
+        --accent: #5b9cf6;
+        --muted: #888;
+        --hr: #2a2a2a;
+        --footer-dim: #555;
+      }
+
+      body {
+        background-color: var(--bg);
+        color: var(--text);
+        font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        font-size: 15px;
+        line-height: 1.75;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+      }
+
+      a:hover {
+        opacity: 0.8;
+      }
+
+      /* ── Navigation ── */
+      nav {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: var(--bg);
+        border-bottom: 1px solid var(--hr);
+      }
+
+      .nav-inner {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .nav-logo {
+        font-weight: 600;
+        color: var(--text);
+        text-decoration: none;
+        font-size: 15px;
+      }
+
+      .nav-logo:hover {
+        opacity: 1;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 2rem;
+      }
+
+      .nav-links a {
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.2s ease;
+      }
+
+      .nav-links a:hover {
+        color: var(--text);
+        opacity: 1;
+      }
+
+      /* ── Main content ── */
+      .content {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+      }
+
+      @media (max-width: 767px) {
+        .content {
+          padding: 2rem 1rem;
+        }
+        .nav-inner {
+          padding: 0 1rem;
+        }
+      }
+
+      /* ── Hero ── */
+      .hero-title {
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--text);
+        margin-bottom: 0.5rem;
+        line-height: 1.3;
+      }
+
+      .hero-subtitle {
+        color: var(--muted);
+        font-size: 14px;
+        margin-bottom: 0;
+      }
+
+      /* ── HR ── */
+      hr {
+        border: none;
+        border-top: 1px solid var(--hr);
+        margin: 2rem 0;
+      }
+
+      /* ── Table of Contents ── */
+      .toc-label {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        margin-bottom: 1rem;
+        font-weight: 400;
+      }
+
+      .toc-list {
+        list-style: none;
+        counter-reset: toc-counter;
+        padding: 0;
+      }
+
+      .toc-list li {
+        counter-increment: toc-counter;
+        margin-bottom: 0.5rem;
+        font-size: 15px;
+      }
+
+      .toc-list li::before {
+        content: counter(toc-counter) ". ";
+        color: var(--muted);
+        font-variant-numeric: tabular-nums;
+      }
+
+      .toc-list li a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      .toc-list li a:hover {
+        text-decoration: underline;
+        opacity: 1;
+      }
+
+      /* ── Sections ── */
+      .section-heading {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--text);
+        margin-bottom: 1rem;
+        line-height: 1.4;
+      }
+
+      .section-number {
+        color: var(--muted);
+        font-weight: 400;
+        margin-right: 0.25rem;
+      }
+
+      section p {
+        margin-bottom: 1rem;
+        color: var(--text);
+        font-size: 15px;
+      }
+
+      section p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* ── Footer ── */
+      footer {
+        border-top: 1px solid var(--hr);
+        padding-top: 2rem;
+        margin-top: 3rem;
+      }
+
+      .footer-copyright {
+        color: var(--muted);
+        font-size: 13px;
+        margin-bottom: 0.5rem;
+      }
+
+      .footer-links {
+        font-size: 13px;
+        margin-bottom: 0.5rem;
+        line-height: 1.8;
+      }
+
+      .footer-links a {
+        color: var(--muted);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .footer-links a:hover {
+        color: var(--accent);
+      }
+
+      .footer-links .sep {
+        color: var(--muted);
+        margin: 0 0.25rem;
+      }
+
+      .footer-effective {
+        color: var(--footer-dim);
+        font-size: 12px;
+        margin-top: 0.5rem;
+      }
+
+      .footer-made {
+        color: var(--footer-dim);
+        font-size: 12px;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body data-id="0">
+
+    <app-icon data-id="1" hidden data-icon="scale" data-palette="Dark"></app-icon>
+    <app-disclaimer data-id="2" intent="legal"></app-disclaimer>
+
+    <!-- ── Navigation ── -->
+    <nav data-id="3">
+      <div data-id="4" class="nav-inner">
+        <a data-id="5" href="#" class="nav-logo">Lextrace LLC</a>
+        <div data-id="6" class="nav-links">
+          <a data-id="7" href="https://lextrace-online.github.io/" target="_blank" rel="noopener noreferrer">Rozcestník</a>
+          <a data-id="8" href="#kontakt">Kontakt</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ── Main Content ── -->
+    <main data-id="9" class="content">
+
+      <!-- Hero -->
+      <header data-id="10" id="top-a1b2">
+        <h1 data-id="11" class="hero-title">Obchodní podmínky</h1>
+        <p data-id="12" class="hero-subtitle">Lextrace LLC · Účinnost od 1. října 2026</p>
+      </header>
+
+      <hr data-id="13" />
+
+      <!-- Table of Contents -->
+      <div data-id="14" id="obsah-c3d4">
+        <p data-id="15" class="toc-label">Obsah</p>
+        <ol data-id="16" class="toc-list">
+          <li data-id="17"><a data-id="18" href="#uvodni-ustanoveni">Úvodní ustanovení</a></li>
+          <li data-id="19"><a data-id="20" href="#vymezeni-pojmu">Vymezení pojmů</a></li>
+          <li data-id="21"><a data-id="22" href="#uzavreni-smlouvy">Uzavření smlouvy</a></li>
+          <li data-id="23"><a data-id="24" href="#prava-povinnosti">Práva a povinnosti smluvních stran</a></li>
+          <li data-id="25"><a data-id="26" href="#platebni-podminky">Platební podmínky</a></li>
+          <li data-id="27"><a data-id="28" href="#reklamace">Reklamace a odpovědnost za vady</a></li>
+          <li data-id="29"><a data-id="30" href="#ochrana-udaju">Ochrana osobních údajů</a></li>
+          <li data-id="31"><a data-id="32" href="#dusevni-vlastnictvi">Duševní vlastnictví</a></li>
+          <li data-id="33"><a data-id="34" href="#omezeni-odpovednosti">Omezení odpovědnosti</a></li>
+          <li data-id="35"><a data-id="36" href="#zaverecna-ustanoveni">Závěrečná ustanovení</a></li>
+        </ol>
+      </div>
+
+      <hr data-id="37" />
+
+      <!-- Section 1 -->
+      <section data-id="38" id="uvodni-ustanoveni">
+        <h2 data-id="39" class="section-heading"><span data-id="40" class="section-number">1.</span> Úvodní ustanovení</h2>
+        <p data-id="41">Společnost Lextrace LLC (dále jen „Poskytovatel") je technologická společnost se zaměřením na vývoj a provoz digitálních služeb, softwarových nástrojů a platforem v oblasti právních technologií (legal-tech). Poskytovatel nabízí své služby prostřednictvím webových aplikací, programovacích rozhraní (API) a dalších digitálních kanálů.</p>
+        <p data-id="42">Tyto obchodní podmínky (dále jen „Podmínky") upravují vzájemná práva a povinnosti mezi Poskytovatelem a osobami, které využívají služby Poskytovatele. Podmínky se vztahují na veškeré smluvní vztahy vznikající v souvislosti s používáním služeb, není-li písemnou dohodou stanoveno jinak.</p>
+        <p data-id="43">Používáním jakékoli služby Poskytovatele, vytvořením uživatelského účtu nebo dokončením objednávky uživatel potvrzuje, že se s těmito Podmínkami seznámil, porozuměl jim a bez výhrad je přijímá. Rozhodným právem pro výklad těchto Podmínek je právo České republiky, pokud není výslovně uvedeno jinak.</p>
+      </section>
+
+      <hr data-id="44" />
+
+      <!-- Section 2 -->
+      <section data-id="45" id="vymezeni-pojmu">
+        <h2 data-id="46" class="section-heading"><span data-id="47" class="section-number">2.</span> Vymezení pojmů</h2>
+        <p data-id="48"><strong data-id="49">Poskytovatel</strong> — Lextrace LLC, společnost provozující digitální služby a softwarové nástroje v oblasti legal-tech, která je stranou těchto Podmínek odpovědnou za provoz a poskytování služeb.</p>
+        <p data-id="50"><strong data-id="51">Uživatel</strong> — jakákoli fyzická nebo právnická osoba, která přistupuje ke službám Poskytovatele, využívá je nebo si vytvoří uživatelský účet. Uživatelem se rozumí i osoba, která služby využívá v rámci bezplatného zkušebního období.</p>
+        <p data-id="52"><strong data-id="53">Služba</strong> — souhrn digitálních produktů, softwarových nástrojů, webových aplikací, API rozhraní a dalších elektronických služeb poskytovaných Poskytovatelem, včetně veškerého obsahu, dokumentace a aktualizací s nimi souvisejících.</p>
+        <p data-id="54"><strong data-id="55">Smlouva</strong> — smluvní vztah vzniklý mezi Poskytovatelem a Uživatelem na základě přijetí těchto Podmínek, a to registrací, dokončením objednávky nebo prvním využitím služby. <strong data-id="56">Účet</strong> — individuální uživatelský účet vytvořený Uživatelem v rámci platformy Poskytovatele, sloužící k přístupu ke službám, správě předplatného a uchovávání uživatelských dat.</p>
+      </section>
+
+      <hr data-id="57" />
+
+      <!-- Section 3 -->
+      <section data-id="58" id="uzavreni-smlouvy">
+        <h2 data-id="59" class="section-heading"><span data-id="60" class="section-number">3.</span> Uzavření smlouvy</h2>
+        <p data-id="61">Smlouva mezi Poskytovatelem a Uživatelem je uzavřena okamžikem, kdy Uživatel dokončí registraci uživatelského účtu, odešle objednávku služby nebo poprvé využije jakoukoli funkcionalitu platformy Poskytovatele. Odesláním objednávky Uživatel závazně potvrzuje svůj zájem o poskytování příslušné služby za podmínek uvedených v těchto Podmínkách a v aktuálním ceníku.</p>
+        <p data-id="62">Proces uzavření smlouvy zahrnuje následující kroky: (a) výběr požadované služby nebo tarifu na webových stránkách Poskytovatele; (b) vyplnění registračních údajů nebo přihlášení do existujícího účtu; (c) potvrzení souhlasu s těmito Podmínkami; (d) provedení platby, je-li služba zpoplatněna. Poskytovatel potvrdí přijetí objednávky elektronickou zprávou zaslanou na e-mailovou adresu Uživatele.</p>
+        <p data-id="63">Osoby mladší 18 let mohou uzavřít smlouvu s Poskytovatelem pouze se souhlasem zákonného zástupce. Poskytovatel si vyhrazuje právo požadovat doložení takového souhlasu a v případě jeho neprokázání účet deaktivovat. Poskytovatel je rovněž oprávněn odmítnout uzavření smlouvy bez udání důvodu, a to zejména v případech, kdy existují oprávněné pochybnosti o identitě nebo záměrech Uživatele.</p>
+      </section>
+
+      <hr data-id="64" />
+
+      <!-- Section 4 -->
+      <section data-id="65" id="prava-povinnosti">
+        <h2 data-id="66" class="section-heading"><span data-id="67" class="section-number">4.</span> Práva a povinnosti smluvních stran</h2>
+        <p data-id="68">Poskytovatel se zavazuje zajistit dostupnost služeb v rozsahu odpovídajícím zvolenému tarifu, provádět průběžnou údržbu a aktualizace platformy a poskytovat Uživateli přiměřenou technickou podporu. Poskytovatel vynaloží přiměřené úsilí k zajištění nepřetržitého provozu, avšak nezaručuje stoprocentní dostupnost služeb, zejména s ohledem na plánované odstávky a údržbu, o nichž bude Uživatel informován v přiměřeném předstihu.</p>
+        <p data-id="69">Uživatel je povinen při registraci a v průběhu používání služeb uvádět pravdivé, úplné a aktuální údaje. Uživatel odpovídá za zabezpečení svého přístupového hesla a přihlašovacích údajů a nesmí je sdílet s třetími osobami. Veškeré aktivity provedené prostřednictvím uživatelského účtu jsou považovány za aktivity Uživatele.</p>
+        <p data-id="70">Uživatel se zavazuje využívat služby výhradně v souladu s platnými právními předpisy, těmito Podmínkami a dobrými mravy. Uživateli je výslovně zakázáno: (a) pokoušet se o zpětný inženýring, dekompilaci nebo rozkládání zdrojového kódu služby; (b) používat službu k jakýmkoli protiprávním účelům; (c) zneužívat službu k automatizovanému hromadnému sběru dat (scraping); (d) pokoušet se o neoprávněný přístup k systémům Poskytovatele nebo k účtům jiných uživatelů; (e) zasahovat do integrity nebo výkonu platformy jakýmikoli technickými prostředky.</p>
+        <p data-id="71">V případě porušení těchto povinností je Poskytovatel oprávněn okamžitě pozastavit nebo zrušit uživatelský účet, a to bez nároku Uživatele na jakoukoli náhradu. Tímto není dotčeno právo Poskytovatele na náhradu škody.</p>
+      </section>
+
+      <hr data-id="72" />
+
+      <!-- Section 5 -->
+      <section data-id="73" id="platebni-podminky">
+        <h2 data-id="74" class="section-heading"><span data-id="75" class="section-number">5.</span> Platební podmínky</h2>
+        <p data-id="76">Ceny služeb jsou uvedeny na webových stránkách Poskytovatele a jsou platné v okamžiku odeslání objednávky. Všechny ceny jsou uvedeny včetně případných daní, není-li výslovně uvedeno jinak. Poskytovatel si vyhrazuje právo ceny služeb měnit, přičemž změna cen se nedotýká již uzavřených smluv po dobu trvání aktuálního fakturačního období.</p>
+        <p data-id="77">Platbu za služby lze provést platební kartou (Visa, Mastercard), bankovním převodem nebo prostřednictvím dalších platebních metod zobrazených v průběhu objednávky. Poskytovatel vystaví Uživateli daňový doklad (fakturu) v elektronické podobě, který bude zpřístupněn v rámci uživatelského účtu a zaslán na e-mailovou adresu Uživatele.</p>
+        <p data-id="78">V případě prodlení s úhradou je Poskytovatel oprávněn omezit nebo pozastavit přístup Uživatele ke službám až do připsání dlužné částky na účet Poskytovatele. Při prodlení delším než 30 dnů je Poskytovatel oprávněn od smlouvy odstoupit a uživatelský účet deaktivovat.</p>
+        <p data-id="79">Vrácení platby (refundace) je možné v případech stanovených právními předpisy nebo těmito Podmínkami. Požadavek na vrácení platby musí být uplatněn písemně do 14 dnů ode dne, kdy důvod pro vrácení vznikl. Na vrácení platby za řádně poskytnuté služby nevzniká nárok, s výjimkou případů, kdy je refundace výslovně garantována popisem příslušného tarifu.</p>
+      </section>
+
+      <hr data-id="80" />
+
+      <!-- Section 6 -->
+      <section data-id="81" id="reklamace">
+        <h2 data-id="82" class="section-heading"><span data-id="83" class="section-number">6.</span> Reklamace a odpovědnost za vady</h2>
+        <p data-id="84">Uživatel je oprávněn uplatnit reklamaci v případě, že poskytovaná služba vykazuje vadu, tj. nesplňuje vlastnosti popsané v dokumentaci nebo je podstatně omezena její funkčnost. Reklamaci je nutné uplatnit písemně (e-mailem nebo prostřednictvím kontaktního formuláře) s uvedením popisu vady, okolností jejího výskytu a požadovaného způsobu nápravy.</p>
+        <p data-id="85">Poskytovatel se zavazuje vyřídit reklamaci ve lhůtě 14 dnů ode dne jejího doručení. O výsledku reklamačního řízení bude Uživatel informován elektronicky. V odůvodněných případech může Poskytovatel lhůtu prodloužit, o čemž Uživatele bezodkladně vyrozumí.</p>
+        <p data-id="86">Jako způsob nápravy uznané reklamace Poskytovatel nabízí podle povahy vady: (a) opravu vady v přiměřené lhůtě; (b) náhradní plnění ve formě ekvivalentní služby; (c) přiměřenou slevu z ceny služby; (d) vrácení uhrazené ceny za dotčené období, pokud vadu nelze odstranit a podstatně omezuje používání služby.</p>
+        <p data-id="87">Reklamaci nelze uplatnit v případech, kdy je vada způsobena: (a) okolnostmi na straně Uživatele, zejména nesprávným používáním služby v rozporu s dokumentací; (b) zásahem třetí strany nebo vyšší mocí; (c) používáním nekompatibilního hardwaru či softwaru; (d) plánovanou údržbou, o níž byl Uživatel předem informován.</p>
+      </section>
+
+      <hr data-id="88" />
+
+      <!-- Section 7 -->
+      <section data-id="89" id="ochrana-udaju">
+        <h2 data-id="90" class="section-heading"><span data-id="91" class="section-number">7.</span> Ochrana osobních údajů</h2>
+        <p data-id="92">Poskytovatel zpracovává osobní údaje Uživatelů v souladu s Nařízením Evropského parlamentu a Rady (EU) 2016/679 (GDPR) a dalšími platnými právními předpisy na ochranu osobních údajů. Poskytovatel přijal odpovídající technická a organizační opatření k zabezpečení osobních údajů proti neoprávněnému přístupu, ztrátě, zničení nebo jinému zneužití.</p>
+        <p data-id="93">Podrobné informace o rozsahu, účelu a způsobu zpracování osobních údajů, právním základu zpracování, době uchovávání a právech subjektů údajů jsou uvedeny v samostatném dokumentu <a data-id="94" href="https://lextrace-online.github.io/ochrana-osobnich-udaju/" target="_blank" rel="noopener noreferrer">Ochrana osobních údajů</a>, který je nedílnou součástí těchto Podmínek.</p>
+        <p data-id="95">Používáním služeb Poskytovatele Uživatel bere na vědomí, že Poskytovatel může využívat soubory cookies a obdobné technologie za účelem zajištění funkčnosti platformy, analýzy používání a zlepšování služeb. Podrobnosti o používání cookies a možnostech jejich nastavení jsou uvedeny v Cookies prohlášení. Uživatel může svůj souhlas s cookies kdykoli odvolat prostřednictvím nastavení svého prohlížeče nebo příslušného rozhraní na platformě.</p>
+      </section>
+
+      <hr data-id="96" />
+
+      <!-- Section 8 -->
+      <section data-id="97" id="dusevni-vlastnictvi">
+        <h2 data-id="98" class="section-heading"><span data-id="99" class="section-number">8.</span> Duševní vlastnictví</h2>
+        <p data-id="100">Veškerá práva duševního vlastnictví ke službám Poskytovatele, včetně zdrojového kódu, grafického rozhraní, databází, dokumentace, obchodních značek, log a veškerého souvisejícího obsahu, náleží výhradně Poskytovateli nebo jeho licenčním partnerům. Tyto Podmínky nepřevádějí na Uživatele žádná vlastnická práva k duševnímu vlastnictví Poskytovatele.</p>
+        <p data-id="101">Uživateli je na základě těchto Podmínek udělena omezená, nevýhradní, nepřenosná a odvolatelná licence k používání služeb výhradně pro účely, k nimž jsou služby určeny. Uživatel není oprávněn služby ani jejich části kopírovat, upravovat, distribuovat, sublicencovat, pronajímat nebo jinak zpřístupňovat třetím osobám bez předchozího písemného souhlasu Poskytovatele.</p>
+        <p data-id="102">V případě, že Uživatel vytvoří v rámci používání služby vlastní obsah (uživatelský obsah), zůstávají veškerá práva k tomuto obsahu na straně Uživatele. Uživatel však uděluje Poskytovateli nevýhradní, bezúplatnou, celosvětovou licenci k používání, zobrazování a zpracování uživatelského obsahu v rozsahu nezbytném pro provoz, údržbu a zlepšování služeb. Tato licence zaniká odstraněním uživatelského obsahu z platformy nebo zrušením uživatelského účtu, s výjimkou anonymizovaných a agregovaných dat.</p>
+      </section>
+
+      <hr data-id="103" />
+
+      <!-- Section 9 -->
+      <section data-id="104" id="omezeni-odpovednosti">
+        <h2 data-id="105" class="section-heading"><span data-id="106" class="section-number">9.</span> Omezení odpovědnosti</h2>
+        <p data-id="107">Odpovědnost Poskytovatele za škodu vzniklou Uživateli v souvislosti s používáním služeb je omezena na přímé škody a její celková výše nepřesáhne částku, kterou Uživatel skutečně uhradil Poskytovateli za služby v období dvanácti (12) měsíců bezprostředně předcházejících vzniku škodné události. Toto omezení se uplatní v maximálním rozsahu povoleném platnými právními předpisy.</p>
+        <p data-id="108">Poskytovatel nenese odpovědnost za nepřímé, následné, zvláštní nebo represivní škody, včetně ušlého zisku, ztráty dat, přerušení podnikání nebo ztráty obchodní příležitosti, a to bez ohledu na to, zda byl Poskytovatel na možnost vzniku takových škod upozorněn.</p>
+        <p data-id="109">Služby poskytované v rámci bezplatných tarifů nebo zkušebních období jsou poskytovány „tak, jak jsou" (as is) a „tak, jak jsou dostupné" (as available), bez jakýchkoli záruk, výslovných či implicitních, včetně záruk prodejnosti, vhodnosti pro určitý účel nebo neporušování práv třetích osob.</p>
+        <p data-id="110">Poskytovatel nenese odpovědnost za neplnění svých povinností, pokud je toto neplnění způsobeno okolnostmi vyšší moci (force majeure), tj. okolnostmi, které nemohl přiměřeně předvídat ani ovlivnit, jako jsou přírodní katastrofy, válečné konflikty, kybernetické útoky, výpadky infrastruktury třetích stran, legislativní změny nebo pandemie.</p>
+      </section>
+
+      <hr data-id="111" />
+
+      <!-- Section 10 -->
+      <section data-id="112" id="zaverecna-ustanoveni">
+        <h2 data-id="113" class="section-heading"><span data-id="114" class="section-number">10.</span> Závěrečná ustanovení</h2>
+        <p data-id="115">Tyto Podmínky a veškeré smluvní vztahy z nich vyplývající se řídí právním řádem České republiky. Pro rozhodování sporů vzniklých v souvislosti s těmito Podmínkami jsou příslušné soudy České republiky, pokud kogentní právní předpisy nestanoví jinak.</p>
+        <p data-id="116">Smluvní strany se zavazují řešit veškeré spory vzniklé v souvislosti s těmito Podmínkami přednostně smírnou cestou. Pokud nebude smírného řešení dosaženo ve lhůtě 30 dnů od písemného oznámení sporu druhé straně, je kterákoli strana oprávněna předložit spor k rozhodnutí příslušnému soudu.</p>
+        <p data-id="117">Je-li jakékoli ustanovení těchto Podmínek shledáno neplatným, neúčinným nebo nevymahatelným, nebude tím dotčena platnost a účinnost ostatních ustanovení. Neplatné ustanovení bude nahrazeno ustanovením, jehož smysl a účel se co nejvíce blíží původnímu záměru smluvních stran.</p>
+        <p data-id="118">Poskytovatel je oprávněn tyto Podmínky jednostranně měnit nebo doplňovat. O každé změně bude Uživatel informován nejméně 30 dnů předem prostřednictvím e-mailového oznámení nebo upozornění v rámci platformy. Pokud Uživatel se změnou Podmínek nesouhlasí, je oprávněn smlouvu vypovědět před datem účinnosti změny. Pokračování v používání služeb po datu účinnosti změny se považuje za souhlas s novým zněním Podmínek. Tyto obchodní podmínky jsou platné a účinné od 1. října 2026.</p>
+      </section>
+
+      <hr data-id="119" />
+
+      <!-- Footer -->
+      <footer data-id="120" id="kontakt">
+        <p data-id="121" class="footer-copyright">© 2026 Lextrace LLC. Všechna práva vyhrazena.</p>
+        <p data-id="122" class="footer-links">
+          <a data-id="123" href="https://lextrace-online.github.io/souhlas_se_zpracovanim/" target="_blank" rel="noopener noreferrer">Souhlas se zpracováním osobních údajů</a>
+          <span data-id="124" class="sep"> · </span>
+          <a data-id="125" href="https://lextrace-online.github.io/ochrana-osobnich-udaju/" target="_blank" rel="noopener noreferrer">Ochrana osobních údajů</a>
+          <span data-id="126" class="sep"> · </span>
+          <a data-id="127" href="#">Cookies prohlášení</a>
+        </p>
+        <p data-id="128" class="footer-effective">Obchodní podmínky jsou platné a účinné od 1. října 2026.</p>
+        <p data-id="129" class="footer-made">Made by Copilot & Lextrace LLC</p>
+      </footer>
+
+    </main>
+  </body>
+</html>
